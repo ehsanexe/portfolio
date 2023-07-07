@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="aboutContainer">
       <Glass noPadding>
-        <img src={me} />
+        <img className="myPic" src={me} />
       </Glass>
       <Glass>
         <p>
