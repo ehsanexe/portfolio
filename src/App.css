@@ -1,5 +1,27 @@
+:root {
+  --blue: #001e3c;
+  --secondaryblue: #0b2e52;
+  --lightblue: #0078f0;
+}
+
 .container {
-  background-color: #001e3c;
+  background: linear-gradient(
+    320deg,
+    var(--blue),
+    var(--secondaryblue),
+    var(--lightblue),
+    white
+  );
   padding: 1rem 10rem;
   color: #ffffff;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Glass from "./Glass";
 
 export default function Skills() {
   const skills = [
@@ -20,9 +21,9 @@ export default function Skills() {
       <div>
         {skills.map((item) => {
           return (
-            <div>
+            <Glass>
               <p>{item}</p>
-            </div>
+            </Glass>
           );
         })}
       </div>
