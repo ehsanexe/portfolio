@@ -1,7 +1,5 @@
-import { Grid, Paper } from "@mui/material";
 import React from "react";
 import me from "../assets/me.png";
-import { Container } from "@mui/system";
 import "./about.css";
 
 export default function About() {
