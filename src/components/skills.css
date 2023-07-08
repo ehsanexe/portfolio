@@ -1,0 +1,12 @@
+.skillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+}

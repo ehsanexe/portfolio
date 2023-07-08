@@ -9,6 +9,9 @@
     320deg,
     var(--blue),
     var(--secondaryblue),
+    var(--secondaryblue),
+    var(--lightblue),
+    var(--lightblue),
     var(--lightblue),
     white
   );

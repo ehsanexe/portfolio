@@ -1,5 +1,6 @@
 import React from "react";
 import Glass from "./Glass";
+import "./skills.css";
 
 export default function Skills() {
   const skills = [
@@ -18,11 +19,13 @@ export default function Skills() {
   return (
     <div>
       <h1>Skills</h1>
-      <div>
+      <div className="skillContainer">
         {skills.map((item) => {
           return (
-            <Glass>
-              <p>{item}</p>
+            <Glass className="skillItem">
+              <div>
+                <span>{item}</span>
+              </div>
             </Glass>
           );
         })}
