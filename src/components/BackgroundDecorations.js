@@ -1,18 +1,14 @@
-import { width } from "@mui/system";
-import "./App.css";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Glass from "./components/Glass";
-import BackgroundDecorations from "./components/BackgroundDecorations";
+import React from "react";
+import Glass from "./Glass";
 
-function App() {
+export default function BackgroundDecorations() {
   const getRandomInt = (min = 0, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
   };
 
-  const initializeBackgroundCards = () => {
+  const getDecorationItems = () => {
     const noOfBoxes = 15;
 
     const arr = [];
@@ -29,24 +25,13 @@ function App() {
         position: "absolute",
       });
     }
-
-    console.log({ arr });
-    return (
-      <div style={{ position: "absolute" }}>
-        {arr.map((item) => (
-          <Glass style={item} />
-        ))}
-      </div>
-    );
+    return arr;
   };
-
   return (
-    <div className="container">
-      <BackgroundDecorations />
-      <About />
-      <Skills />
+    <div style={{ position: "absolute" }}>
+      {getDecorationItems().map((item) => (
+        <Glass style={item} />
+      ))}
     </div>
   );
 }
-
-export default App;
